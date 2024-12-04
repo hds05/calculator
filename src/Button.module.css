@@ -1,0 +1,42 @@
+.calcBtns {
+  width: 100%;
+  aspect-ratio: 1; /* Makes buttons square */
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+    -2px -2px 5px rgba(255, 255, 255, 0.8);
+}
+
+.calcBtns:active {
+  transform: scale(0.95);
+  background-color: #dcdcdc;
+}
+
+.calcBtns:hover {
+  background-color: #e0e0e0;
+}
+
+.res {
+  background-color: #ff891c;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .calcBtns {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .calcBtns {
+    font-size: 0.9rem;
+  }
+}
